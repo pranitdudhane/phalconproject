@@ -1,0 +1,241 @@
+html {}
+
+body {
+    background-color: #0b4968;
+    color: #222222;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .1rem;
+    font-size: 13px;
+    color: #666666;
+}
+
+.top-heading .h3 {
+    display: block;
+    font-size: 20px;
+    /*text-align: center !important;*/
+    margin: 20px 0 10px 0;
+}
+
+.form-senction {
+    height: 83.3vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.bottom-button {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+footer {
+    position: fixed;
+    left:0;
+    bottom: 0;
+}
+footer .bsw-logo-box{
+  display: inline-block;
+  background: #fff;
+  border:1px solid #f4f4f4;
+}
+footer button {
+    width: 90px;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #0196fd;
+    border-color: #0196fd;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #0196fd;
+    border-color: #0196fd;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #003b9d;
+    border-color: #003b9d;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #003b9d;
+    border-color: #003b9d;
+}
+
+.bg-primary {
+    background-color: #003b9d!important;
+    color: white !important;
+}
+
+.bg-info {
+    background-color: #0196fd!important;
+    color: white !important;
+    padding:0px 10px;
+    font-size: 13px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+@media (min-width: 768px) {
+    /*.d-md-block {
+        display: inline!important;
+    }*/
+}
+li.nav-item.dropdown {
+    border-right: 1px solid #6ac0fb;
+    padding:3px 10px;
+}
+.navbar .dropdown-item{
+    font-size: 13px;
+    padding: .25rem .5rem;
+}
+
+.navbar .dropdown-toggle,
+.navbar .dropdown-menu a {
+    cursor: pointer;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    position: absolute;
+    top: 20px;
+}
+
+.navbar .dropdown-item.active,
+.navbar .dropdown-item:active {
+    color: inherit;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.navbar .dropdown-item:focus,
+.navbar .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
+@media (min-width: 767px) {
+    .navbar .dropdown-toggle:not(.nav-link)::after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: .5em;
+        vertical-align: 0;
+        border-bottom: .3em solid transparent;
+        border-top: .3em solid transparent;
+        border-left: .3em solid;
+        right: 5px;
+        top: 9px;
+        position: absolute;
+    }
+}
+
+.logout-icon {
+    width: 20px;
+    color: #fff;
+    filter: invert(1);
+}
+
+
+
+/*---------- HAMBURGER ICON -------------*/
+
+.navbar-toggler{height:40px;}
+.menu-btn {
+  display: block;
+  right:0px;
+  margin: 1em;
+  position: absolute;
+  top:10px;
+  width: 36px;
+  transform: translate(-50%,-50%);  
+}
+
+.menu-btn:before,
+.menu-btn:after {
+  background-color: #fff;
+  content: '';
+  display: block;
+  height: 4px;
+  transition: all 200ms ease-in-out;
+}
+.menu-btn:before {
+  box-shadow: 0 10px 0 #fff;
+  margin-bottom: 16px;
+}
+.menu-btn:hover:before {
+  box-shadow: 0 0 0 #fff;
+  transform: translateY(10px) rotate(45deg);
+}
+.menu-btn:hover:after{
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.p-20{
+    padding: 20px;
+}
+.pl-20{
+    padding: 20px;
+}
+
+/* ------------------ Media Queries --------------*/
+@media (max-width: 760px){
+    .top-heading .h3 {
+        font-size: 17px;
+        text-align: right !important;
+        margin: 20px 0 10px 0;
+        display: block;
+    }
+    .navbar-toggler{height:55px;}
+    .logoutt{margin-left: 10px; margin-bottom: 20px;}
+    .log-out .logoutt{
+        display: block;
+        margin-bottom: 20px;
+    }
+    li.nav-item.dropdown {
+        border-right: none;
+        border-bottom: 1px solid #6ac0fb;
+        padding: 3px 10px;
+    }
+    footer{display: none;}
+}
+@media(max-width: 1024px){
+    .row.top-heading{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .form-senction{height: 86.3vh;}
+    
+}
+
